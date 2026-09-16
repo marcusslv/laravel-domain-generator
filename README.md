@@ -1,63 +1,60 @@
-# 📦 Pacote de Abstração de Domínio - Abstractor
+# Abstractor
 
-## Visão Geral 🧱📚
+Pacote Laravel que gera as classes base de uma camada de domínio via Artisan, cortando o boilerplate inicial de projetos organizados em DDD ou Clean Architecture.
 
-**Abstractor** é uma biblioteca PHP criada para auxiliar o desenvolvimento de aplicações Laravel por meio da geração de classes abstratas reutilizáveis. O pacote oferece os comandos `make:abstracts` e `make:domain`, que automatizam a criação de estruturas essenciais do domínio como **Entity**, **Repository**, **Service** e **Controller**. Também são geradas classes de infraestrutura como **migrations**, **factories** e **seeders**.
+[![Packagist](https://img.shields.io/packagist/v/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
+[![Downloads](https://img.shields.io/packagist/dt/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
+[![CI](https://img.shields.io/github/actions/workflow/status/marcusslv/abstractor/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/marcusslv/abstractor/actions)
+[![Licença](https://img.shields.io/packagist/l/marcusslv/abstractor?style=flat-square)](LICENSE)
 
-## 🧩 Instalação
+## O problema que resolve
 
-Para instalar o pacote **Abstractor**, é necessário ter o **Composer** instalado em seu sistema. Caso não possua, você pode baixá-lo em [getcomposer.org](https://getcomposer.org).
+Todo projeto Laravel estruturado em domínio começa com as mesmas dezenas de arquivos: entidade, repositório, contrato, serviço, controller, migration, factory e seeder, sempre com a mesma forma e sempre escritos à mão. O Abstractor gera esse conjunto em um comando, com nomenclatura e estrutura consistentes entre módulos.
 
-Com o Composer instalado, execute o seguinte comando no diretório raiz do seu projeto Laravel:
+## Requisitos
+
+- PHP 8.2 ou superior
+- Laravel 11
+
+## Instalação
 
 ```bash
 composer require marcusslv/abstractor --dev
 ```
 
-## 🚀 Como Utilizar
+O service provider é registrado automaticamente pelo package discovery do Laravel.
 
-Após a instalação do pacote, os seguintes comandos estão disponíveis via Artisan:
+## Uso
 
-### 🔧 Geração de Classes Abstratas
+### Classes abstratas do projeto
 
 ```bash
-php artisan make:abstract
+php artisan make:abstracts
 ```
 
-Este comando gerará as seguintes classes abstratas:
+Gera as classes abstratas que servem de base para todo o domínio: Entity, Repository, Service, Controller e Interface. Rode uma vez por projeto.
 
-- Entity
-- Repository
-- Service
-- Controller
-- Interface
-
-### 🏗️ Geração de Classes de Domínio
+### Um novo domínio
 
 ```bash
 php artisan make:domain
 ```
 
-Este comando gerará as seguintes classes:
+Gera o conjunto completo de um domínio: Entity, Repository, Service, Controller, Interface, Migration, Factory e Seeder.
 
-- Entity
-- Repository
-- Service
-- Controller
-- Interface
-- Migration
-- Factory
-- Seeder
+## Desenvolvimento
 
-## 🎯 Objetivo
+```bash
+composer test          # executa a suíte de testes
+composer pint          # verifica a formatação
+composer pint:fix      # aplica a formatação
+composer rector:check  # analisa refatorações sugeridas
+```
 
-Este pacote foi desenvolvido com foco em **padronização de código**, **reuso** e **agilidade** no desenvolvimento de aplicações Laravel com base em uma arquitetura bem definida e orientada a domínio.
+## Contribuindo
 
-## 🤝 Contribuições
+Issues e pull requests são bem-vindos. Para mudanças maiores, abra uma issue antes para discutir a proposta.
 
-Contribuições são bem-vindas! Fique à vontade para abrir issues ou enviar pull requests.
+## Licença
 
-## 📄 Licença
-
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais informações.
-
+MIT. Veja [LICENSE](LICENSE).
