@@ -1,6 +1,6 @@
 {
     "name": "marcusslv/laravel-domain-generator",
-    "description": "Pacote Laravel para geração de classes base de domínio com foco em arquitetura limpa, reutilização e produtividade.",
+    "description": "Scaffold an entire Laravel domain with one Artisan command: entity, repository, service, controller, interface, migration, factory and seeder. Built for DDD and Clean Architecture projects.",
     "license": "MIT",
     "keywords": ["laravel", "domain", "ddd", "clean-architecture", "generator", "scaffold", "abstracts", "artisan"],
     "type": "library",
