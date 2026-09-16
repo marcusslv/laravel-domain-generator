@@ -2,9 +2,30 @@
     "name": "marcusslv/abstractor",
     "description": "Pacote Laravel para geração de classes base de domínio com foco em arquitetura limpa, reutilização e produtividade.",
     "license": "MIT",
-    "keywords": ["abstracts", "laravel", "domain", "service", "provider"],
+    "keywords": ["abstracts", "laravel", "domain", "service", "provider", "ddd", "clean-architecture"],
     "type": "library",
-    "minimum-stability": "dev",
+    "homepage": "https://github.com/marcusslv/abstractor",
+    "support": {
+        "issues": "https://github.com/marcusslv/abstractor/issues",
+        "source": "https://github.com/marcusslv/abstractor"
+    },
+    "authors": [
+        {
+            "name": "Marcus Silva",
+            "email": "contato@marcusslv.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^11.0 || ^12.0",
+        "illuminate/support": "^11.0 || ^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "laravel/pint": "^1.13",
+        "rector/rector": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "Codehubmvs\\Abstracts\\": "src/"
@@ -17,27 +38,21 @@
     },
     "extra": {
         "laravel": {
-            "providers":[
+            "providers": [
                 "Codehubmvs\\Abstracts\\AbstractsBaseServiceProvider"
             ]
         }
     },
-    "authors": [
-        {
-            "name": "Marcus Silva",
-            "email": "marcusjapaslv@hotmail.com"
-        }
-    ],
-    "require-dev": {
-        "orchestra/testbench": "^9.0",
-        "laravel/pint": "dev-main"
+    "config": {
+        "sort-packages": true
     },
+    "prefer-stable": true,
     "scripts": {
-        "rector:check": "vendor/bin/rector process --dry-run",
-        "rector:run": "vendor/bin/rector process",
         "test": "vendor/bin/phpunit",
         "pint": "@php ./vendor/bin/pint --test",
         "pint:fix": "@php ./vendor/bin/pint",
-        "pint:changes": "@php ./vendor/bin/pint --dirty"
+        "pint:changes": "@php ./vendor/bin/pint --dirty",
+        "rector:check": "vendor/bin/rector process --dry-run",
+        "rector:run": "vendor/bin/rector process"
     }
 }
