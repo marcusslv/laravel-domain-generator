@@ -2,10 +2,10 @@
 
 Pacote Laravel que gera as classes base de uma camada de domínio via Artisan, cortando o boilerplate inicial de projetos organizados em DDD ou Clean Architecture.
 
-[![Packagist](https://img.shields.io/packagist/v/marcusslv/laravel-domain-generator?style=flat-square)](https://packagist.org/packages/marcusslv/laravel-domain-generator)
-[![Downloads](https://img.shields.io/packagist/dt/marcusslv/laravel-domain-generator?style=flat-square)](https://packagist.org/packages/marcusslv/laravel-domain-generator)
+[![Packagist](https://img.shields.io/packagist/v/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
+[![Downloads](https://img.shields.io/packagist/dt/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
 [![CI](https://img.shields.io/github/actions/workflow/status/marcusslv/laravel-domain-generator/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/marcusslv/laravel-domain-generator/actions)
-[![Licença](https://img.shields.io/packagist/l/marcusslv/laravel-domain-generator?style=flat-square)](LICENSE)
+[![Licença](https://img.shields.io/packagist/l/marcusslv/abstractor?style=flat-square)](LICENSE)
 
 ## O problema que resolve
 
