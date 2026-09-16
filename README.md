@@ -51,6 +51,10 @@ composer pint:fix      # aplica a formatação
 composer rector:check  # analisa refatorações sugeridas
 ```
 
+## Changelog
+
+As mudanças de cada versão estão em [CHANGELOG.md](CHANGELOG.md).
+
 ## Contribuindo
 
 Issues e pull requests são bem-vindos. Para mudanças maiores, abra uma issue antes para discutir a proposta.
