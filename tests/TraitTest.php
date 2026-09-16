@@ -1,6 +1,6 @@
 <?php
 
-namespace Codehubmvs\Abstracts;
+namespace Codehubmvs\Abstracts\Tests;
 
 trait TraitTest
 {
