@@ -1,13 +1,13 @@
 {
-    "name": "marcusslv/abstractor",
+    "name": "marcusslv/laravel-domain-generator",
     "description": "Pacote Laravel para geração de classes base de domínio com foco em arquitetura limpa, reutilização e produtividade.",
     "license": "MIT",
-    "keywords": ["abstracts", "laravel", "domain", "service", "provider", "ddd", "clean-architecture"],
+    "keywords": ["laravel", "domain", "ddd", "clean-architecture", "generator", "scaffold", "abstracts", "artisan"],
     "type": "library",
-    "homepage": "https://github.com/marcusslv/abstractor",
+    "homepage": "https://github.com/marcusslv/laravel-domain-generator",
     "support": {
-        "issues": "https://github.com/marcusslv/abstractor/issues",
-        "source": "https://github.com/marcusslv/abstractor"
+        "issues": "https://github.com/marcusslv/laravel-domain-generator/issues",
+        "source": "https://github.com/marcusslv/laravel-domain-generator"
     },
     "authors": [
         {
