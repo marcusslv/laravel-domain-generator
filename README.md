@@ -14,7 +14,7 @@ Todo projeto Laravel estruturado em domínio começa com as mesmas dezenas de ar
 ## Requisitos
 
 - PHP 8.2 ou superior
-- Laravel 11
+- Laravel 12
 
 ## Instalação
 
