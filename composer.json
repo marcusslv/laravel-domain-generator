@@ -28,18 +28,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Codehubmvs\\Abstracts\\": "src/"
+            "Marcusslv\\DomainGenerator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Codehubmvs\\Abstracts\\Tests\\": "tests/"
+            "Marcusslv\\DomainGenerator\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Codehubmvs\\Abstracts\\AbstractsBaseServiceProvider"
+                "Marcusslv\\DomainGenerator\\AbstractsBaseServiceProvider"
             ]
         }
     },

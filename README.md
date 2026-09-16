@@ -1,6 +1,6 @@
 # Laravel Domain Generator
 
-Pacote Laravel que gera as classes base de uma camada de domínio via Artisan, cortando o boilerplate inicial de projetos organizados em DDD ou Clean Architecture.
+Gera a estrutura completa de um domínio Laravel com um único comando Artisan: entity, repository, service, controller, interface, migration, factory e seeder. Feito para projetos em DDD ou Clean Architecture.
 
 [![Packagist](https://img.shields.io/packagist/v/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
 [![Downloads](https://img.shields.io/packagist/dt/marcusslv/abstractor?style=flat-square)](https://packagist.org/packages/marcusslv/abstractor)
