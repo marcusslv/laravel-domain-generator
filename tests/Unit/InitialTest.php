@@ -9,7 +9,6 @@ class InitialTest extends TestCase
 {
     public function test_trait(): void
     {
-        //Get User fields
         $result = User::methodTest();
         $this->assertSame($result, 'this ok');
     }
